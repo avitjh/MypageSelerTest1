@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity3">
+
+    <TextView
+        android:id="@+id/title04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/title3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t_productname01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/tv_productname1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title04" />
+
+    <TextView
+        android:id="@+id/t_detail02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/tv_detail1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_productname01" />
+
+    <TextView
+        android:id="@+id/t_amountsetting02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/tv_amountsetting1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_detail02" />
+
+    <TextView
+        android:id="@+id/t_reservationperiod02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/tv_reservationperiod1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_amountsetting02" />
+
+    <Button
+        android:id="@+id/b_complete01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/bt_complete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_reservationperiod02" />
+
+    <Button
+        android:id="@+id/b_correction01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/bt_correction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/b_complete01"
+        app:layout_constraintTop_toBottomOf="@+id/t_reservationperiod02" />
+
+    <Button
+        android:id="@+id/b_mypage04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/bt_mypage3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_complete01" />
+
+    <Button
+        android:id="@+id/b_sell04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="93dp"
+        android:text="@string/bt_sell2"
+        app:layout_constraintStart_toEndOf="@+id/b_mypage04"
+        app:layout_constraintTop_toBottomOf="@+id/b_correction01" />
+
+    <Button
+        android:id="@+id/b_order04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/bt_order3"
+        app:layout_constraintStart_toEndOf="@+id/b_sell04"
+        app:layout_constraintTop_toBottomOf="@+id/b_correction01" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity2">
+
+    <TextView
+        android:id="@+id/title03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="@string/title2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/t_productname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/tv_productname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title03" />
+
+    <TextView
+        android:id="@+id/t_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/tv_detail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_productname" />
+
+    <TextView
+        android:id="@+id/t_amountsetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/tv_amountsetting"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_detail" />
+
+    <TextView
+        android:id="@+id/t_reservationperiod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/tv_reservationperiod"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_amountsetting" />
+
+    <Button
+        android:id="@+id/b_list03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:onClick="onButtonClick"
+        android:text="@string/bt_list2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t_reservationperiod" />
+
+    <Button
+        android:id="@+id/b_mypage03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="72dp"
+        android:onClick="onButtonClick"
+        android:text="@string/bt_mypage2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_list03" />
+
+    <Button
+        android:id="@+id/b_sell03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/bt_sell1"
+        app:layout_constraintStart_toEndOf="@+id/b_mypage03"
+        app:layout_constraintTop_toBottomOf="@+id/b_list03" />
+
+    <Button
+        android:id="@+id/b_order03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/bt_order2"
+        app:layout_constraintStart_toEndOf="@+id/b_sell03"
+        app:layout_constraintTop_toBottomOf="@+id/b_list03" />
+</androidx.constraintlayout.widget.ConstraintLayout>

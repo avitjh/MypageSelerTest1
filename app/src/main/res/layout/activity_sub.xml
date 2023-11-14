@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SubActivity">
+
+    <TextView
+        android:id="@+id/title02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/title1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b_list02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="@string/bt_list1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_list01" />
+
+    <Button
+        android:id="@+id/b_list01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:onClick="onButtonClick"
+        android:text="@string/bt_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title02" />
+
+    <Button
+        android:id="@+id/b_order02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/bt_order"
+        app:layout_constraintStart_toEndOf="@+id/b_sell02"
+        app:layout_constraintTop_toBottomOf="@+id/b_list02" />
+
+    <Button
+        android:id="@+id/b_sell02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/bt_sell1"
+        app:layout_constraintStart_toEndOf="@+id/b_mypage02"
+        app:layout_constraintTop_toBottomOf="@+id/b_list02" />
+
+    <Button
+        android:id="@+id/b_mypage02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="180dp"
+        android:onClick="onButtonClick"
+        android:text="@string/bt_mypage1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_list02" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
